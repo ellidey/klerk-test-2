@@ -1,26 +1,13 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import MailingHeader from "@/components/MailingHeader.vue";
+import MailingTabs from "@/components/MailingTabs.vue";
+import MailingContent from "@/components/MailingContent.vue";
+import MailingFooter from "@/components/MailingFooter.vue";
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<template>
+  <mailing-header />
+  <mailing-tabs />
+  <mailing-content />
+  <mailing-footer />
+</template>
